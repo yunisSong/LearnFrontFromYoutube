@@ -11,3 +11,5 @@ YouTube：[CSS Water Drop Cards UI with Hover Effects](https://www.youtube.com/w
      
      当不设阴影类型时，默认为投影效果。当设为inset时，为内阴影效果。
 ```
+
+![](demo.gif)
