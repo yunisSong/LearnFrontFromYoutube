@@ -93,3 +93,34 @@ body {
   background: #fff;
   opacity: 0.9;
 }
+
+
+
+/* 31% 69% 46% 54% / 36% 41% 59% 64%  */
+
+@keyframes barrery_charge {
+  0% {
+    background: #ff0000;
+    height: 0%;
+  }
+
+  25% {
+    background: #ff9100;
+    height: 25%;
+  }
+
+  50% {
+    background: #fff200;
+    height: 50%;
+  }
+
+  75% {
+    background: #d7fc03;
+    height: 75%;
+  }
+
+  100% {
+    background: #00ff00;
+    height: 100%;
+  }
+}
