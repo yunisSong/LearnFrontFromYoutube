@@ -8,119 +8,20 @@
 body {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
   /* background: linear-gradient(45deg, #ff0000, #0000ff); */
   background: #eff0f4;
 }
 
-.container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px 60px;
-  padding: 50px 0;
-  flex-wrap: wrap;
-}
-
-.container .drop {
-  position: relative;
-
-  width: 350px;
-  height: 350px;
-  /* background-color: var(--clr); */
-  /* 
-    box-shadow:阴影类型 X轴位移 Y轴位移 阴影大小 阴影扩展 阴影颜色
-     阴影扩展 :扩大现有的阴影宽度。
-    当不设阴影类型时，默认为投影效果。当设为inset时，为内阴影效果。
-    X轴和Y轴位移不等同但类似于Photoshop里面的”角度”和”位置。
-    阴影大小、扩展、颜色和Photoshop里面的都同理。 
-  */
-  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
-    25px 35px 20px rgba(0, 0, 0, 0.05),
-    25px 30px 30px rgba(0, 0, 0, 0.05),
-    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
-
-  transition: all 0.35s ease-in-out;
-
-}
-
-.container .drop:nth-child(1) {
-  border-radius: 31% 69% 46% 54% / 36% 41% 59% 64%;
-}
-
-.container .drop:nth-child(2) {
-  border-radius: 29% 71% 35% 65% / 36% 34% 66% 64%;
-}
-
-.container .drop:nth-child(3) {
-  border-radius: 61% 39% 35% 65% / 54% 34% 66% 46%;
-}
-
-.container .drop:hover {
-  border-radius: 50%;
-
-}
-
-.container .drop:hover ::before ::after {
-  opacity: 1;
-
-}
-
-/* 加入两个白点 */
-.container .drop::before {
-  content: '';
-  position: absolute;
-  left: 80px;
-  top: 50px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
+.navigation {
+  position: fixed;
   background: #fff;
-  opacity: 0.9;
+  width: 100px;
+  height: 100%;
 }
 
-.container .drop::after {
-  content: '';
-  position: absolute;
-  left: 100px;
-  top: 90px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.9;
-}
-
-
-
-/* 31% 69% 46% 54% / 36% 41% 59% 64%  */
-
-@keyframes barrery_charge {
-  0% {
-    background: #ff0000;
-    height: 0%;
-  }
-
-  25% {
-    background: #ff9100;
-    height: 25%;
-  }
-
-  50% {
-    background: #fff200;
-    height: 50%;
-  }
-
-  75% {
-    background: #d7fc03;
-    height: 75%;
-  }
-
-  100% {
-    background: #00ff00;
-    height: 100%;
-  }
+.navigation .toggleMenu {
+  height: 80px;
+  border-bottom: #eff0f4 solid 1px;
 }
