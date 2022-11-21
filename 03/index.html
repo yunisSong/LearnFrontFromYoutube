@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <ul>
-        <li>
+        <li class="active">
           <i class="icon"><ion-icon name="home-outline"></ion-icon></i>
           <p class="title">Home</p>
         </li>
@@ -30,9 +30,24 @@
           <i class="icon"><ion-icon name="home-outline"></ion-icon></i>
           <p class="title">Home</p>
         </li>
+
+        <div class="layer"></div>
       </ul>
     </div>
   </body>
+  <script>
+    const list = document.querySelectorAll('li');
+    function click() {
+      console.log('-----');
+      list.forEach((element) => {
+        element.classList.remove('active');
+        this.classList.add('active');
+      });
+    }
+    list.forEach((element) => {
+      element.addEventListener('click', click);
+    });
+  </script>
 
   <script
     type="module"

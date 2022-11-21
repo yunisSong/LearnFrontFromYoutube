@@ -14,17 +14,118 @@ body {
   justify-content: center;
 
   /* background: linear-gradient(45deg, #ff0000, #0000ff); */
-  background: #eff0f4;
+  background: #333;
 }
 
-.navigation {
-  position: fixed;
+.container {
+  width: 400px;
+  height: 70px;
   background: #fff;
-  width: 100px;
-  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navigation .toggleMenu {
-  height: 80px;
-  border-bottom: #eff0f4 solid 1px;
+.container ul {
+  position: relative;
+  width: 350px;
+  display: flex;
+  /* flex-direction: row; */
+
+}
+
+.container ul li {
+  height: 70px;
+  width: 70px;
+  list-style: none;
+  z-index: 1;
+}
+
+.container ul li .icon {
+  font-size: 20px;
+  color: #666;
+  line-height: 75px;
+  display: block;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container ul li .title {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-25px);
+
+}
+
+.container ul li.active .icon {
+  transform: translateY(-35px);
+  font-size: 25px;
+
+}
+
+.container ul li.active .title {
+  opacity: 1;
+  transform: translateY(-35px);
+
+}
+
+.layer {
+  position: absolute;
+  background-color: #29fd53;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: -50%;
+  border: #333 5px solid;
+  transition: 0.5s;
+
+}
+
+.layer::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  border-top-right-radius: 30px;
+  background: transparent;
+  box-shadow: 0 -10px 0 0 #333;
+}
+
+.layer::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  border-top-left-radius: 30px;
+  background: transparent;
+  box-shadow: 0 -10px 0 0 #333;
+}
+
+.container ul li:nth-child(1).active~.layer {
+  transform: translateX(calc(70px * 0));
+}
+
+.container ul li:nth-child(2).active~.layer {
+  transform: translateX(calc(70px * 1));
+}
+
+.container ul li:nth-child(3).active~.layer {
+  transform: translateX(calc(70px * 2));
+}
+
+
+.container ul li:nth-child(4).active~.layer {
+  transform: translateX(calc(70px * 3));
+}
+
+.container ul li:nth-child(5).active~.layer {
+  transform: translateX(calc(70px * 4));
 }
