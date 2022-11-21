@@ -9,7 +9,21 @@ Learn FrontFromYoutube
 ![](01/demo.gif)
 
 ### 02 水滴动画
-
+* 
 ![](02/demo.gif)
 ### 03 菜单动画
 ![](03/demo.gif)
+
+
+
+
+todo
+
+- [ ] [Chart JS Integration | Responsive Admin Dashboard using Html CSS & Javascript | Charts And Graphs](https://www.youtube.com/watch?v=q3zc1ph5fvg&ab_channel=OnlineTutorials)
+- [ ] [Awesome CSS Border Animation | Quick CSS3 Animation Effects](https://www.youtube.com/watch?v=LYgQXOV-x24&ab_channel=OnlineTutorials)
+
+
+
+
+
+
