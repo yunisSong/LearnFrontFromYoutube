@@ -20,11 +20,42 @@ body {
   display: flex;
 }
 
+
+
 .navigation {
+  position: relative;
   width: 70px;
   background-color: aqua;
+  transition: 0.5s;
+  height: 100%;
 }
+
+.navigation .toggleMenu {
+  position: absolute;
+  right: 0;
+  background-color: bisque;
+  width: 40px;
+  height: 40px;
+}
+
+.navigation .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+
+  background-color: bisque;
+}
+
+.navigation .menu li {
+  list-style: none;
+}
+
+.container.active .navigation {
+  width: 170px;
+}
+
 
 .content {
   flex: 1;
+  background: #0bed12;
 }
