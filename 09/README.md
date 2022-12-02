@@ -1,10 +1,12 @@
-YouTube：[CSS Animation Play State Property | CSS Animation Effects Tutorial](https://www.youtube.com/watch?v=78SGNoUgqRs)
+YouTube：[CSmart CSS Challenges and Solutions | CSS Tricky Shape](https://www.youtube.com/watch?v=AA3PpxbuM2Q&ab_channel=OnlineTutorials)
 
 ```css
-animation-play-state: paused;
-animation-delay: calc(0.1s * var(--i));
-
-animation-play-state: running;
+inset: -30px;
+border: transparent solid 30px;
+border-top: #fff solid 30px;
+border-right: #fff solid 30px;
+border-radius: 50%;
+transform: rotate(-45deg);
 ```
 
-![](demo.gif)
+![](demo.jpg)
