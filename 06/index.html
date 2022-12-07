@@ -12,43 +12,74 @@
       <div class="navigation">
         <div class="toggleMenu"></div>
         <div class="menu">
-          <li style="--i: 0">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+          <li style="--i: 0" class="selcet">
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
           <li style="--i: 1">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
 
           <li style="--i: 2">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
           <li style="--i: 3">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
           <li style="--i: 4">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
           <li style="--i: 5">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
           <li style="--i: 6">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
           <li style="--i: 7">
-            <a><ion-icon name="home-outline"></ion-icon></a>
-            <span>Home</span>
+            <a>
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Home</span>
+            </a>
           </li>
         </div>
       </div>
       <div class="content">
-        111
         <div class="search"></div>
         <div class="category"></div>
         <div class="content"></div>
@@ -64,6 +95,16 @@
       console.log('2222');
       container.classList.toggle('active');
     });
+
+    const menuList = document.querySelectorAll('.menu li');
+    function activeMneu() {
+      menuList.forEach((element) => {
+        element.classList.remove('hovered');
+      });
+      this.classList.add('hovered');
+    }
+
+    menuList.addEventListener('hover', activeMneu);
   </script>
 
   <script
