@@ -61,10 +61,10 @@ body {
   width: 100%;
   bottom: 0;
   border-radius: 14px;
-  animation: barrery_charge 8s linear infinite;
+  animation: battery_charge 8s linear infinite;
 }
 
-@keyframes barrery_charge {
+@keyframes battery_charge {
   0% {
     background: #ff0000;
     height: 0%;
