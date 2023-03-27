@@ -525,8 +525,29 @@ video {
   z-index: 10;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .bg-slate-50 {
@@ -537,6 +558,24 @@ video {
 .bg-teal-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 118 110 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-white {
