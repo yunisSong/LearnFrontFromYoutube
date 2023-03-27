@@ -3,8 +3,6 @@ https://www.youtube.com/watch?v=lCxcTsOHrjo&ab_channel=DaveGray
 
 npx tailwindcss init
 npx tailwindcss -i ./01/src/input.css -o ./01/build/css/style.css
-
-
 npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch
 
 

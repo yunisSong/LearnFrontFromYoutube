@@ -4,8 +4,10 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
+    /* 观察 input.css 变化，并且输出为style.css */
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
-    "prettier":"npx prettier --write **/*.html"
+    /* 格式化 tailwindcss  prettier-plugin-tailwindcss */
+    "prettier": "npx prettier --write **/*.html"
   },
   "keywords": [],
   "author": "",
