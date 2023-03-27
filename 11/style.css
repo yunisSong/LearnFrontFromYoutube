@@ -19,76 +19,46 @@ body {
   /* filter: alpha(opacity=70); */
 }
 
-.container {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  display: flex;
+.loader {
+  position: fixed;
+  width: 5em;
+  height: 5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 5px solid #ff2281;
+  border-radius: 50%;
+  animation: rotate 2s ease-in-out infinite;
 }
 
-.container .circle {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  border: #fff solid 30px;
-
-}
-
-.container .circle:nth-child(2) {
-  left: -100px;
-  border-color: #ff4685;
-  /* z-index: 1; */
-
-}
-
-.container .circle:nth-child(1)::before {
+.loader::before,
+.loader::after {
   content: '';
   position: absolute;
-  inset: -30px;
-  border: transparent solid 30px;
-  border-top: #fff solid 30px;
-  border-right: #fff solid 30px;
-  border-radius: 50%;
-  transform: rotate(-45deg);
-  z-index: 100;
+  border-radius: inherit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: rotate 4s ease-in-out infinite;
 }
 
-.container .circle:nth-child(1)::after {
-  content: '';
-  position: absolute;
-  inset: -30px;
-  border-radius: 50%;
-  border: transparent solid 30px;
-  border-right: #000 solid 30px;
-  transform: rotate(-55deg);
-  z-index: 1;
-  filter: blur(10px);
-
+.loader::before {
+  width: 80%;
+  height: 80%;
+  border-top: 4px solid #75d5fd;
+  animation-delay: .5s;
 }
 
-.container .circle:nth-child(2)::before {
-  content: '';
-  position: absolute;
-  inset: -30px;
-  border: transparent solid 30px;
-  border-bottom: #ff4685 solid 30px;
-  border-left: #ff4685 solid 30px;
-  border-radius: 50%;
-  transform: rotate(-35deg);
-  z-index: 100;
-
+.loader::after {
+  width: 50%;
+  height: 50%;
+  border-top: 4px solid #7fff00;
+  animation-delay: .75s;
 }
 
-.container .circle:nth-child(2)::after {
-  content: '';
-  position: absolute;
-  inset: -30px;
-  border-radius: 50%;
-  border: transparent solid 30px;
-  border-left: #000 solid 30px;
-  transform: rotate(-45deg);
-  z-index: 1;
-  filter: blur(10px);
-
+@keyframes rotate {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
