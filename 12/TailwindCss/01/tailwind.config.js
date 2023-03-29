@@ -7,6 +7,7 @@ module.exports = {
         skin: {
           base: 'var(--color-text-base)',
           content: 'var(--color-text-content)',
+          button: 'var(--color-text-button)',
         },
       },
       backgroundColor: {

@@ -4,29 +4,35 @@
 
 @layer base {
   :root {
-    --color-text-base: #222831;
-    --color-text-content: #393E46;
-    --color-fill: #EEEEEE;
-    --color-button-primary: #00ADB5;
-    --color-button-primary-hover: #05fcd3;
+    --color-text-base: #0B2447;
+    --color-text-content: #19376D;
+    --color-text-button: #fff;
+
+    --color-fill: #A5D7E8;
+    --color-button-primary: #576CBC;
+    --color-button-primary-hover: #2245d1;
 
   }
 
-  .theme-red {
-    --color-text-base: #FF597B;
-    --color-text-content: #FF8E9E;
-    --color-fill: #EEEEEE;
-    --color-button-primary: #F9B5D0;
-    --color-button-primary-hover: #F9B5D0;
+  .theme-1 {
+    --color-text-base: #000000;
+    --color-text-content: #262A56;
+    --color-text-button: #fff;
+
+    --color-fill: #E3CCAE;
+    --color-button-primary: #956844;
+    --color-button-primary-hover: #bf5a07;
 
   }
 
-  .theme-blue {
-    --color-text-base: #3A4F7A;
-    --color-text-content: #22557a;
-    --color-fill: #FFC6D3;
-    --color-button-primary: #FEA1BF;
-    --color-button-primary-hover: #E98EAD;
+  .theme-2 {
+    --color-text-base: #1a96c3;
+    --color-text-content: #3f96b5;
+    --color-text-button: #4d98b4;
+
+    --color-fill: #EEEEEE;
+    --color-button-primary: #E3CCAE;
+    --color-button-primary-hover: #e3b77d;
 
   }
 }
