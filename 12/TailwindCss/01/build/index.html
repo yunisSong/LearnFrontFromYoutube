@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Rockets</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-slate-50 dark:bg-black dark:text-white"
+  >
+    <!-- 创建一个card -->
+    <div class="grid w-1/2 place-items-center">
+      <div class="h-40 w-40 overflow-hidden bg-skin-base p-2 text-skin-base">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam
+        placeat minima molestias qui eos, nobis quibusdam corrupti blanditiis
+        magni ut assumenda velit architecto perferendis suscipit mollitia quasi.
+        Necessitatibus, assumenda?
+      </div>
+      <div class="flex items-start justify-start gap-1">
+        <button
+          class="theme-red mt-3 h-5 w-20 rounded-r-sm bg-red-300 text-center text-skin-base"
+          id="red"
+        >
+          red
+        </button>
+        <button
+          class="theme-blue mt-3 h-5 w-20 rounded-r-sm bg-blue-400 text-center text-skin-base"
+          id="blue"
+        >
+          blue
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const red = document.querySelector('#red');
+    const blue = document.querySelector('#blue');
+    red.addEventListener('click', () => {
+      console.log('red');
+      changeTheme('theme-red');
+    });
+    blue.addEventListener('click', () => {
+      changeTheme('theme-blue');
+    });
+    function changeTheme(theme) {
+      const body = document.querySelector('body');
+
+      body.classList.remove('theme-red');
+      body.classList.remove('theme-blue');
+
+      body.classList.add(theme);
+      console.log('body.classList: ', body.classList);
+    }
+  </script>
+</html>

@@ -2,7 +2,13 @@
 module.exports = {
   content: ['./build/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        skin: {
+          base: 'var(--color-text-base)',
+        },
+      },
+    },
   },
   plugins: [],
-}
+};

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.0 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,6 +31,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +48,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -419,6 +422,30 @@ video {
   display: none;
 }
 
+:root {
+  --color-text-base: #222831;
+  --color-text-content: #393E46;
+  --color-fill: #EEEEEE;
+  --color-button-primary: #00ADB5;
+  --color-button-primary-hover: #05fcd3;
+}
+
+.theme-red {
+  --color-text-base: #FF597B;
+  --color-text-content: #FF8E9E;
+  --color-fill: #EEEEEE;
+  --color-button-primary: #F9B5D0;
+  --color-button-primary-hover: #F9B5D0;
+}
+
+.theme-blue {
+  --color-text-base: #3A4F7A;
+  --color-text-content: #22557a;
+  --color-fill: #FFC6D3;
+  --color-button-primary: #FEA1BF;
+  --color-button-primary-hover: #E98EAD;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -513,96 +540,122 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
 
-.h-16 {
-  height: 4rem;
+.h-40 {
+  height: 10rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-52 {
-  height: 13rem;
+.h-5 {
+  height: 1.25rem;
 }
 
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-16 {
-  width: 4rem;
+.w-1\/2 {
+  width: 50%;
 }
 
-.w-32 {
-  width: 8rem;
+.w-40 {
+  width: 10rem;
 }
 
-.w-52 {
-  width: 13rem;
+.w-20 {
+  width: 5rem;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.flex-1 {
+  flex: 1 1 0%;
 }
 
-.place-content-center {
-  place-content: center;
+.place-items-center {
+  place-items: center;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.items-start {
+  align-items: flex-start;
 }
 
-.border {
-  border-width: 1px;
+.items-center {
+  align-items: center;
 }
 
-.border-green-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
+.justify-start {
+  justify-content: flex-start;
 }
 
-.bg-emerald-200 {
+.justify-center {
+  justify-content: center;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-r-sm {
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.bg-skin-base {
+  background-color: var(--color-fill);
+}
+
+.bg-slate-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
-.bg-emerald-500 {
+.bg-skin-button {
+  background-color: var(--color-button-primary);
+}
+
+.bg-red-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(16 185 129 / var(--tw-bg-opacity));
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
+.bg-blue-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.p-2 {
+  padding: 0.5rem;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.text-center {
+  text-align: center;
 }
 
-.duration-700 {
-  transition-duration: 700ms;
+.text-skin-base {
+  color: var(--color-text-base);
 }
 
-.ease-linear {
-  transition-timing-function: linear;
-}
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
 
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
