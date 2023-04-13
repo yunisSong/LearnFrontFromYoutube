@@ -1,0 +1,60 @@
+.bgAnimationLayer {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  /* left: 100px; */
+  transform: translateX(100px);
+  transition: all 0.35s;
+  z-index: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0.1;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transform: translateX(90px);
+    /* left: 90px; */
+  }
+  25% {
+    opacity: 0.5;
+    visibility: visible;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transform: translateX(70px);
+  }
+  60% {
+    opacity: 1;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transform: translateX(0);
+    visibility: visible;
+  }
+  80% {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transform: translateX(10px);
+  }
+  100% {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transform: translateX(5px);
+  }
+}
+
+.showLayer {
+  animation: bounceInRight 1.35s linear;
+  animation-fill-mode: forwards;
+}
+/* .bgAnimationLayer:hover {
+  animation: bounceInRight 1.35s linear 1;
+  animation-fill-mode: forwards;
+} */
+
+.disShowLayer {
+  animation: bounceInRight 1.35s linear reverse;
+  animation-fill-mode: forwards;
+}

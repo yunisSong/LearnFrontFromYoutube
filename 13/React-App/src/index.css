@@ -5,3 +5,7 @@
 :root {
   user-blue: #3a7cff;
 }
+
+.bg {
+  background-color: red;
+}

@@ -47,18 +47,36 @@ body {
   width: 80%;
   height: 80%;
   border-top: 4px solid #75d5fd;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .loader::after {
   width: 50%;
   height: 50%;
   border-top: 4px solid #7fff00;
-  animation-delay: .75s;
+  animation-delay: 0.75s;
 }
 
 @keyframes rotate {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.loader1 {
+  margin-left: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation: flip 1.5s linear infinite;
+}
+@keyframes flip {
+  from {
+    transform: perspective(100px);
+  }
+  to {
+    transform: perspective(100px) rotateY(360deg);
+    background-color: wheat;
   }
 }
