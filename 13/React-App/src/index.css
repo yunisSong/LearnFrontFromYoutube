@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  user-blue: #3a7cff;
+  user-select: #3a7cff;
 }
 
 .bg {
