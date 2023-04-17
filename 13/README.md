@@ -36,3 +36,46 @@
 3. 使用的时候 `{SliderStyles.bg}`
 
 > VSCode 中可以使用 `css module` 插件
+
+### 父子组件间的参数、事件传递
+
+子组件
+
+```react
+interface Props {
+  input: string;
+  outPass: (out: string) => void;
+}
+
+function EventDemo({ input, outPass }: Props) {
+  return (
+    <button
+      className=' my-2 rounded-xl bg-slate-700 p-2 px-3 text-white'
+      onClick={() => {
+        touchEvent(outPass);
+      }}
+    >
+      {input}
+    </button>
+  );
+}
+
+const touchEvent = (outPass: (out: string) => void) => {
+  outPass('向外传递参数、事件');
+};
+```
+
+父组件
+
+```react
+
+import EventDemo from './components/EventDemo';
+
+function Father() {
+    const outPass = (out: string) => {
+        console.log('out: ', out);
+    };
+    return <EventDemo input='事件参数传递' outPass={outPass}></EventDemo>
+}
+
+```
