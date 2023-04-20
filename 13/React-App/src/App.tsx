@@ -5,6 +5,7 @@ import Alert from './components/Alert';
 import Slide from '@/Slide/Slide';
 import EventDemo from './components/EventDemo';
 import ev from './components/SYEventBus_1';
+import eventbus from 'syeventbus';
 function App() {
   let items = ['深圳1', '上海', '北京'];
   const title = '中国城市';
@@ -13,18 +14,14 @@ function App() {
   };
 
   // event bus
-  let un1 = ev.addListener('ddd', (p) => {
+
+  eventbus.addListener('ddd1', (p: any) => {
     console.log('p: ', p);
   });
+  eventbus.emit('ddd1', { name1: 'Yunis1' });
 
-  let un = ev.addListener('ddd', (p) => {
-    console.log('p1111: ', p);
-  });
   // un?.unsubscribe();
   // un1?.unsubscribe();
-
-  ev.emit('ddd', { name: 'Yunis' });
-  ev.emit('ddd');
 
   return (
     <div className='App flex min-h-screen'>

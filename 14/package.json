@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "syeventbus": "^0.0.3"
+  }
+}
