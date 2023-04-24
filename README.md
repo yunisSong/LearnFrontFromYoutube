@@ -51,8 +51,6 @@ Learn FrontFromYoutube
 
 ### [13 react init](13)
 
-![](12/demo.gif)
-
 ### [14 image hover 动画](14)
 
 ![](14/demo.gif)
