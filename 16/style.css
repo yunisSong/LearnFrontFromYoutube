@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+body {
+  font-size: 12px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(45deg, #2196f3, #ff4685);
+}
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  border-radius: 100vmax;
+  padding: 4px 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  background-image: conic-gradient(#fff 0deg, transparent 320deg);
+  z-index: -1;
+  /* Should be bigger than button */
+  height: 200px;
+  width: 200px;
+
+  /* Centering the gradient  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+
+  border-radius: inherit;
+  transition: transform 1s cubic-bezier(0.3, 1, 0.3, 1);
+}
+
+.btn:hover::before {
+  transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.btn-content {
+  background: linear-gradient(45deg, #2196f3, #ff4685);
+
+  padding: 1rem 2rem;
+  border-radius: inherit;
+}
+/* ------- 学习------ */
+.demo {
+  width: 100px;
+  height: 100px;
+
+  transition: 1s cubic-bezier(0.3, 1, 0.3, 1);
+}
+.demo:hover {
+  transform: rotate(360deg);
+}
+.demo1 {
+  background-image: conic-gradient(#fff 0deg, transparent 320deg);
+}
+
+.demo2 {
+  background: conic-gradient(
+    deeppink 0,
+    deeppink 30%,
+    yellowgreen 30%,
+    yellowgreen 70%,
+    teal 70%,
+    teal 100%
+  );
+  border-radius: 50%;
+}
+
+.demo3 {
+  background: conic-gradient(
+    deeppink 0,
+    transparent 30%,
+    yellowgreen 30%,
+    transparent 70%,
+    teal 70%,
+    transparent 100%
+  );
+  border-radius: 50%;
+}

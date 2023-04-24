@@ -41,7 +41,7 @@
 
 子组件
 
-```react
+```jsx
 interface Props {
   input: string;
   outPass: (out: string) => void;
@@ -67,15 +67,13 @@ const touchEvent = (outPass: (out: string) => void) => {
 
 父组件
 
-```react
-
+```jsx
 import EventDemo from './components/EventDemo';
 
 function Father() {
-    const outPass = (out: string) => {
-        console.log('out: ', out);
-    };
-    return <EventDemo input='事件参数传递' outPass={outPass}></EventDemo>
+  const outPass = (out: string) => {
+    console.log('out: ', out);
+  };
+  return <EventDemo input='事件参数传递' outPass={outPass}></EventDemo>;
 }
-
 ```
