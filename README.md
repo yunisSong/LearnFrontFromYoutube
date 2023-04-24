@@ -49,7 +49,7 @@ Learn FrontFromYoutube
 
 ![](12/demo.gif)
 
-### [13 react tip](13)
+### [13 react init](13)
 
 ![](12/demo.gif)
 
