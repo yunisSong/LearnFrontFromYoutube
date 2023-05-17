@@ -65,6 +65,10 @@ Learn FrontFromYoutube
 
 ![](17/demo.gif)
 
+### [18 跟随光标移动的元素](18)
+
+![](18/demo.gif)
+
 # TODO
 
 - [ ] [Chart JS Integration | Responsive Admin Dashboard using Html CSS & Javascript | Charts And Graphs](https://www.youtube.com/watch?v=q3zc1ph5fvg&ab_channel=OnlineTutorials)

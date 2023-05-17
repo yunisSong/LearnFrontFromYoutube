@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document11</title>
+  </head>
+  <body>
+    <div class="card"></div>
+
+    <script>
+      const card = document.querySelector('.card');
+      card.addEventListener('mousemove', (e) => {
+        console.log('e: ', e);
+        console.log('e.clientX: ', e.clientX);
+        console.log('e.clientY: ', e.clientY);
+
+        const rect = card.getBoundingClientRect();
+        console.log('rect: ', rect);
+        const left = e.clientX - rect.left;
+        console.log('left: ', left);
+        const top = e.clientY - rect.top;
+        console.log('top: ', top);
+
+        card.style.setProperty('--left', `${left}px`);
+        card.style.setProperty('--top', `${top}px`);
+      });
+    </script>
+  </body>
+</html>
