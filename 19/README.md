@@ -1,7 +1,7 @@
 # react tailwind vite demo
 
 [TOC]
-
+https://www.youtube.com/watch?v=TVQnhcVFTVs&ab_channel=CodeCommerce
 ### creat app
 
 ```
