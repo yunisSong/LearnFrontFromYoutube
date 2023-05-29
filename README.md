@@ -69,6 +69,14 @@ Learn FrontFromYoutube
 
 ![](18/demo.gif)
 
+### [19 react tailwind vite demo](19)
+
+![](18/demo.gif)
+
+### [20 设置内圆角](20)
+
+![](20/demo.png)
+
 # TODO
 
 - [ ] [Chart JS Integration | Responsive Admin Dashboard using Html CSS & Javascript | Charts And Graphs](https://www.youtube.com/watch?v=q3zc1ph5fvg&ab_channel=OnlineTutorials)
