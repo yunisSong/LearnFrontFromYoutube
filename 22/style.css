@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  background: linear-gradient(45deg, #2196f3, #ff4685);
+  /* filter: grayscale(1); */
+
+  /* filter: grayscale(100%); */
+  /* filter: alpha(opacity=70); */
+}
+
+/* <div class="container">
+<div class="card" style="--clr: #009688">
+  <div class="imageBox">
+    <img src="./img1.jpg" alt="" srcset="" />
+  </div>
+  <div class="content"></div>
+</div> */
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.card:hover {
+  height: 400px;
+}
+.card .imageBox {
+  position: absolute;
+  width: 300px;
+  height: 220px;
+  top: 20px;
+  left: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover .imageBox {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.75);
+}
+.card .imageBox img {
+  /* height: 100%; */
+  object-fit: contain;
+}
+.card .content {
+  position: absolute;
+  top: 240px;
+  padding: 16px;
+  height: 46px;
+  overflow: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+.card:hover .content {
+  top: 100px;
+  height: 250px;
+}
+.card .content h2 {
+  text-align: center;
+  flex: 1;
+  height: 40px;
+}
+.card .content p {
+  overflow-y: auto;
+  line-height: 22px;
+  font-size: 14px;
+}
+.card .content button {
+  flex: 1;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: var(--clr);
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  border-radius: 8px;
+}

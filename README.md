@@ -71,8 +71,6 @@ Learn FrontFromYoutube
 
 ### [19 react tailwind vite demo](19)
 
-![](18/demo.gif)
-
 ### [20 设置内圆角](20)
 
 ![](20/demo.png)
@@ -80,6 +78,10 @@ Learn FrontFromYoutube
 ### [21 按钮路径动画](21)
 
 ![](21/demo.gif)
+
+### [22 鼠标悬浮卡片动画效果](22)
+
+![](22/demo.gif)
 
 # TODO
 
