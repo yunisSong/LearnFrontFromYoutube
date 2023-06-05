@@ -55,6 +55,10 @@ function Navbar() {
           <li>
             <a href="">
               Linkedin <FaFacebook />
+              <FaGithub />
+              <FaLinkedin />
+              <HiOutlineMail />
+              <BsFillPersonLinesFill />
             </a>
           </li>
         </ul>
