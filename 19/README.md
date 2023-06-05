@@ -2,13 +2,15 @@
 
 [TOC]
 https://www.youtube.com/watch?v=TVQnhcVFTVs&ab_channel=CodeCommerce
+
+https://www.youtube.com/watch?v=2kg0z1qNrkw&ab_channel=CodeCommerce
+
 ### creat app
 
 ```
 npm create vite@latest
 
 ```
-
 
 ### taildwind
 
@@ -51,13 +53,14 @@ export default {
 
 #### format css
 
-
 ```
 npm i -D concurrently
 npm install -D prettier prettier-plugin-tailwindcss
 
 ```
+
 #### 设置 prettier 样式
+
 ##### 新建 .prettierrc 文件
 
 ```
@@ -77,7 +80,9 @@ npm install -D prettier prettier-plugin-tailwindcss
   ]
 }
 ```
+
 ##### 新建 .prettierignore 文件
+
 ```
 /dist/*
 .local
@@ -95,3 +100,12 @@ npm install -D prettier prettier-plugin-tailwindcss
 
 `npm install normalize.css`
 
+### tips
+
+根据条件展示不同的组件
+
+```js
+{
+  !nav ? <FaBars /> : <FaTimes />;
+}
+```
