@@ -76,7 +76,7 @@ body {
   text-align: center;
 }
 .card:hover .content {
-  top: 100px;
+  top: 120px;
   height: 250px;
 }
 .card .content h2 {
