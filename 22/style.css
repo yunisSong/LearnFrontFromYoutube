@@ -76,18 +76,20 @@ body {
   text-align: center;
 }
 .card:hover .content {
-  top: 120px;
-  height: 250px;
+  top: 140px;
+  height: 220px;
 }
 .card .content h2 {
   text-align: center;
   flex: 1;
   height: 40px;
+  letter-spacing: 0.1em;
 }
 .card .content p {
   overflow-y: auto;
   line-height: 22px;
   font-size: 14px;
+  letter-spacing: 0.1em;
 }
 .card .content button {
   flex: 1;

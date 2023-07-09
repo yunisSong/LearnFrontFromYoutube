@@ -1,0 +1,56 @@
+#json {
+  background-color: #1c2833;
+}
+
+li {
+  line-height: 36px;
+  padding-left: 20px;
+  position: relative;
+  list-style: none;
+}
+.button {
+  /* 绘制三角 */
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  left: -0.08em;
+  top: 15px;
+  border: 10px solid transparent;
+  border-top: 10px solid #525252;
+}
+
+.hiddenItems {
+  color: white;
+  margin-left: 40px;
+  display: none;
+}
+.ulHidden {
+  display: none;
+}
+.ulShow {
+  display: block;
+}
+.span {
+  color: white;
+}
+.keyString {
+  color: #4fdee5;
+}
+.valueString {
+  color: #0ad161;
+}
+.number {
+  color: #ff8c00;
+}
+
+.boolean {
+  color: orchid;
+}
+.object,
+.array {
+  border-left: 1px dotted #525252;
+}
+/* 未解析到的部分。 */
+.otherOptions {
+  color: red;
+}
