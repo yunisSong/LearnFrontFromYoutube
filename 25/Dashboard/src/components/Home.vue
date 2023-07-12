@@ -1,6 +1,8 @@
 <template>
   <div class="min-h-screen flex">
     <Navigation />
+    <span class="iconfont icon-xxx"></span>
+
     <Main class="flex-1" />
   </div>
 </template>
