@@ -1,13 +1,15 @@
 <!-- 导航菜单 -->
 <template>
-  <div class="bg-blue-400 w-[240px] py-3 overflow-hidden">
+  <div
+    class="bg-blue-400 py-3 overflow-hidden text-lg transition-['width'] duration-350 ease-in-out"
+  >
     <ul>
       <template v-for="item in items">
         <li
           class="pl-5 h-10 text-white hover:text-blue-400 hover:bg-white leading-10 outRound ml-5 rounded-l-[20px]"
         >
-          <span :class="'iconfont ' + item.iconClass"></span>
-          {{ item.title }}
+          <span :class="'text-lg iconfont  ' + item.iconClass"></span>
+          <span class="pl-[42px]">{{ item.title }}</span>
         </li>
       </template>
     </ul>

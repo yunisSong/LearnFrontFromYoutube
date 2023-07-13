@@ -1,5 +1,8 @@
 <template>
-  <div class="bg-slate-500">main1111</div>
+  <div class="">
+    <!-- nav -->
+    <!-- main -->
+  </div>
 </template>
 
 <script setup></script>
