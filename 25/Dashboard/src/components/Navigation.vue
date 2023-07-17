@@ -1,15 +1,24 @@
 <!-- 导航菜单 -->
 <template>
   <div
-    class="bg-blue-400 py-3 overflow-hidden text-lg transition-['width'] duration-350 ease-in-out"
+    class="bg-blue-400 py-3 overflow-hidden transition-['width'] duration-350 ease-in-out border-l-[10px] border-blue-400"
   >
     <ul>
       <template v-for="item in items">
         <li
-          class="pl-5 h-10 text-white hover:text-blue-400 hover:bg-white leading-10 outRound ml-5 rounded-l-[20px]"
+          class="text-white h-[60px] hover:text-blue-400 hover:bg-white outRound rounded-l-[30px] w-full"
         >
-          <span :class="'text-lg iconfont  ' + item.iconClass"></span>
-          <span class="pl-[42px]">{{ item.title }}</span>
+          <a class="flex h-full w-full">
+            <span
+              :class="
+                'flex flex-shrink-0 justify-center items-center w-[60px] h-[60px] text-lg iconfont  ' +
+                item.iconClass
+              "
+            ></span>
+            <span class="items-center pl-3 leading-[60px] whitespace-nowrap">{{
+              item.title
+            }}</span>
+          </a>
         </li>
       </template>
     </ul>

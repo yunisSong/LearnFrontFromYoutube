@@ -3,7 +3,12 @@
     <Navigation :class="navWidthClass" />
     <div class="flex-1">
       <!-- button -->
-      <button @click="toggleNavShow">111</button>
+      <!-- icon-menu -->
+      <a class="w-[60px] h-[60px]" @click="toggleNavShow">
+        <span
+          class="flex flex-shrink-0 justify-center items-center text-lg iconfont icon-menu"
+        ></span>
+      </a>
       <Main />
     </div>
   </div>
@@ -27,9 +32,9 @@ const toggleNavShow = () => {
 
 <style>
 .showLargeWidth {
-  width: 180px;
+  width: 300px;
 }
 .showDefaultWidth {
-  width: 100px;
+  width: 80px;
 }
 </style>
