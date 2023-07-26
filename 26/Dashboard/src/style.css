@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.material-symbols-sharp {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+html {
+  font-size: 12px !important;
+}
+:root {
+  --color-base: #fff;
+  --color-base1: #f0eff5;
+  --color-gray: #86848c;
+  --color-dark: #27282f;
+
+  --color-warning: rgb(234, 181, 7);
+  --card-padding: 1.6rem;
+  --padding-1: 1rem;
+  --padding-2: 8px;
+  --card-border-radius: 1.6rem;
+  --border-radius-1: 1rem;
+  --border-radius-2: 6px;
+}
+.light {
+  /* 背景色 */
+  --color-base: #fff;
+  --color-text-base: #f0eff5;
+  --color-text-gray: #86848c;
+  --color-primary: rgb(71, 7, 234);
+  --color-success: rgb(34, 202, 75);
+  --color-danger: rgb(255, 67, 54);
+  --color-purple: rgb(169, 99, 245);
+}
+.dark {
+  --color-base: #fff;
+
+  --color-text-base: #27282f;
+  --color-text-gray: #56555e;
+  --color-primary: rgba(71, 7, 234, 0.2);
+  --color-success: rgba(34, 202, 75, 0.2);
+  --color-danger: rgba(255, 67, 54, 0.2);
+  --color-purple: rgba(160, 99, 245, 0.2);
+}
