@@ -30,7 +30,7 @@
     width: 50px;
     height: 50px;
     background: red;
-    top: 40px;
+    top: 60px;
     right: 0;
     background-color: transparent;
     box-shadow: 25px -25px 0 0 #fff;
@@ -41,20 +41,23 @@
 /* icon font  */
 @font-face {
   font-family: 'iconfont'; /* Project id 4163371 */
-  src: url('./assets/iconfont/iconfont.woff2?t=1689142036198') format('woff2'),
+  src:
+    url('./assets/iconfont/iconfont.woff2?t=1689142036198') format('woff2'),
     url('./assets/iconfonticonfont.woff?t=1689142036198') format('woff'),
     url('./assets/iconfonticonfont.ttf?t=1689142036198') format('truetype');
 }
 
 .iconfont {
   font-family: 'iconfont' !important;
-  /* font-size: 16px; */
+  font-size: 1.5em;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
-
+.icon-menu:before {
+  content: '\e86b';
+}
 .icon-xiaoxi:before {
   content: '\e600';
 }
