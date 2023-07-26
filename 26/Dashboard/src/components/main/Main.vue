@@ -1,8 +1,8 @@
 <template>
   <div class="flex">
-    <Aside class="w-[200px] h-full" />
-    <Middle />
-    <Right />
+    <Aside class="w-[200px] min-h-full" />
+    <Middle class="flex-1" />
+    <Right class="w-[200px] h-full" />
   </div>
 </template>
 

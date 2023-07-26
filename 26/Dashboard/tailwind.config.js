@@ -19,6 +19,7 @@ export default {
           base1: 'var(--color-base1)',
           gray: 'var(--color-gray)',
           dark: 'var(--color-dark)',
+          purple: 'var(--color-purple)',
         },
       },
       borderRadius: {
