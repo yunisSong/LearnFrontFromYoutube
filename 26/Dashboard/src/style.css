@@ -2,24 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 .material-symbols-sharp {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
 }
 html {
   font-size: 12px !important;
 }
+* {
+  box-sizing: border-box;
+}
 :root {
-  --color-base: #fff;
-  --color-base1: #f0eff5;
-  --color-gray: #86848c;
-  --color-dark: #27282f;
-
-  --color-warning: rgb(234, 181, 7);
   --card-padding: 1.6rem;
   --padding-1: 1rem;
   --padding-2: 8px;
   --card-border-radius: 1.6rem;
   --border-radius-1: 1rem;
   --border-radius-2: 6px;
+  --color-warning: rgb(234, 181, 7);
+
+  --color-primary: rgb(71, 7, 234);
+  --color-success: rgb(34, 202, 75);
+  --color-danger: rgb(255, 67, 54);
+  --color-minor: rgb(169, 99, 245);
+
+  --text-color-primary: #27282f;
+  --text-color-select: rgb(169, 99, 245);
+  --text-color-minor: #fff;
+  --text-color-help: #86848c;
+  --text-color-placeholder: #86848c;
+
+  --background-color-normal: #fff;
+  --background-color-minor: #f0eff5;
+
+  --background-color-danger: #fff;
+  --background-color-select: #86848c;
+  --background-color-select1: #27282f;
+  --background-color-select2: rgb(169, 99, 245);
 }
 h4 {
   font-size: 1.2rem;
@@ -44,4 +65,11 @@ h4 {
   --color-success: rgba(34, 202, 75, 0.2);
   --color-danger: rgba(255, 67, 54, 0.2);
   --color-purple: rgba(160, 99, 245, 0.2);
+}
+
+.card {
+  @apply flex w-full items-center justify-center rounded-base1 bg-slate-200;
+}
+.shadow1 {
+  box-shadow: 0 0 10px red;
 }

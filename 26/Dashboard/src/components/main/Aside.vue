@@ -1,66 +1,84 @@
 <template>
-  <div class="flex justify-center items-center">
-    <div class="flex items-center w-[96%] bg-skin-base min-h-full flex-col">
+  <div class="flex h-[88vh] flex-col items-center justify-between">
+    <div class="flex h-[88vh] w-[96%] flex-col justify-between">
       <button id="closeButton" class="hidden">
         <span class="material-symbols-sharp"> close </span>
       </button>
-      <div
-        class="sidebar flex-1 flex flex-col items-start mt-4 text-skin-gray relative"
-      >
+      <div class="sidebar relative mt-4 flex flex-1 flex-col text-skin-primary">
         <template v-for="(item, index) in items">
           <a
-            class="flex justify-start items-center gap-[1.2rem] hover:text-skin-purple h-[4.2rem] p-4 hover:pl-[2rem]"
+            class="group flex h-[4.2rem] items-center gap-[1.2rem] p-4 hover:text-skin-select"
             :class="{
-              'bg-skin-base1 before:absolute before:w-[8px] before:bg-skin-purple before:left-0 before:h-[4rem] text-skin-purple':
+              'bg-skin-normal text-skin-select  before:absolute before:left-0 before:h-[4rem] before:w-[8px] before:bg-skin-select2':
                 index == showIndex,
             }"
             @click="changeShowIndex(index)"
           >
-            <span class="material-symbols-sharp text-[1.7rem]">
+            <span
+              class="material-symbols-sharp peer ml-[3rem] text-[1.7rem] transition-all duration-300 group-hover:ml-[2rem]"
+              :class="{
+                'ml-[2rem]': index == showIndex,
+              }"
+            >
               {{ item.icon }}
             </span>
-            <h4>{{ item.title }}</h4>
+            <h4 class="peer-hover:text-slate-700">
+              {{ item.title }}
+            </h4>
           </a>
         </template>
       </div>
+    </div>
+    <div
+      class="update flex w-[96%] flex-col items-center gap-4 rounded-base1 bg-skin-normal p-4"
+    >
+      <span class="material-icons-sharp"> update </span>
+      <h4>Update Available</h4>
+      <small class="text-skin-gray">Security Updates</small>
+      <small>General Updates</small>
+      <a
+        href="#"
+        class="te rounded-full bg-skin-primary p-2 text-center text-white"
+        >Update Now</a
+      >
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue";
 const items = [
   {
-    icon: 'dashboard',
-    title: 'dashboard',
+    icon: "dashboard",
+    title: "dashboard",
   },
   {
-    icon: 'currency_exchange',
-    title: 'Exchange',
+    icon: "currency_exchange",
+    title: "Exchange",
   },
   {
-    icon: 'wallet',
-    title: 'Wallet',
+    icon: "wallet",
+    title: "Wallet",
   },
   {
-    icon: 'payment',
-    title: 'Transactions',
+    icon: "payment",
+    title: "Transactions",
   },
   {
-    icon: 'pie_chart',
-    title: 'Analytics',
+    icon: "pie_chart",
+    title: "Analytics",
   },
   {
-    icon: 'message',
-    title: 'Messages',
+    icon: "message",
+    title: "Messages",
   },
   {
-    icon: 'help_center',
-    title: 'Help Center',
+    icon: "help_center",
+    title: "Help Center",
   },
   {
-    icon: 'settings',
-    title: 'Setting',
+    icon: "settings",
+    title: "Setting",
   },
 ];
 const showIndex = ref(0);
