@@ -5,6 +5,8 @@
   </div>
 </template>
 <script setup>
-import Nav from "./components/Nav.vue";
-import Main from "./components/main/Main.vue";
+// import Nav from "./components/Nav.vue";
+import Nav from "@/components/Nav.vue";
+
+import Main from "components/main/Main.vue";
 </script>
