@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-[1rem] flex">
+  <div class="flex px-[1rem]">
     <Aside class="w-[16rem]" />
     <Middle class="flex-1" />
     <Right class="h-full w-[200px]" />

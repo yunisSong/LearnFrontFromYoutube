@@ -19,6 +19,7 @@ export default {
           select: "var(--text-color-select)",
           gray: "var(--text-color-help)",
           placeholder: "var(--text-color-placeholder)",
+          help: "var(--text-color-help)",
         },
       },
       backgroundColor: {
@@ -39,6 +40,7 @@ export default {
       },
       boxShadow: {
         base: " 0 0 5px color.dark.light, 0 0 20px color.light.dark",
+        hover: "0 12px 24px var(--background-color-select2)",
       },
     },
   },
