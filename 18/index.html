@@ -11,56 +11,22 @@
     <div class="card"></div>
 
     <script>
-      const card = document.querySelector('.card');
-      card.addEventListener('mousemove', (e) => {
-        console.log('e: ', e);
-        console.log('e.clientX: ', e.clientX);
-        console.log('e.clientY: ', e.clientY);
+      const card = document.querySelector(".card");
+      card.addEventListener("mousemove", (e) => {
+        console.log("e: ", e);
+        console.log("e.clientX: ", e.clientX);
+        console.log("e.clientY: ", e.clientY);
 
         const rect = card.getBoundingClientRect();
-        console.log('rect: ', rect);
+        console.log("rect: ", rect);
         const left = e.clientX - rect.left;
-        console.log('left: ', left);
+        console.log("left: ", left);
         const top = e.clientY - rect.top;
-        console.log('top: ', top);
+        console.log("top: ", top);
 
-        card.style.setProperty('--left', `${left}px`);
-        card.style.setProperty('--top', `${top}px`);
+        card.style.setProperty("--left", `${left}px`);
+        card.style.setProperty("--top", `${top}px`);
       });
-      // 是否已经登录
-      let isLoginState = () => {
-        let logout = document.querySelector('#mode_logout');
-        let display = logout.style.display;
-        if (display == 'none') {
-          // 尚未登录
-          return false;
-        } else {
-          // 已经登录
-          return true;
-        }
-      };
-
-      let name = document.querySelector('#password_name');
-      let pwd = document.querySelector('#password_pwd');
-      let isLoginState = isLoginState();
-      if (name && pwd) {
-        name.value = 'D10399';
-        pwd.value = 'Ssy198800!';
-        setTimeout(() => {
-          if (!isLoginState) {
-            onPwdLogin();
-          }
-        }, 500);
-      }
     </script>
   </body>
 </html>
-
-# tell application "Finder" # close every window # open home # set toolbar
-visible of the front Finder window to true # set the sidebar width of the front
-Finder window to 135 # set the current view of the front Finder window to column
-view # set the bounds of the front Finder window to {36, 116, 511, 674} # open
-folder "Documents" of home # set toolbar visible of the front Finder window to
-false # set the current view of the front Finder window to flow view # set the
-bounds of front Finder window to {528, 116, 1016, 674} # select the last Finder
-window # end tell
