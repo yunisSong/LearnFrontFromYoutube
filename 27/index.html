@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document11</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      function stars() {
+        let e = document.createElement("div");
+        e.setAttribute("class", "star");
+        let icon = document.createElement("ion-icon");
+        icon.setAttribute("name", "star");
+        e.appendChild(icon);
+        document.body.appendChild(e);
+        e.style.left = Math.random() * +innerWidth - 30 + "px";
+        console.log("Math.random(): ", Math.random());
+        setTimeout(() => {
+          document.body.removeChild(e);
+        }, 5000);
+      }
+
+      setInterval(() => {
+        stars();
+      }, 100);
+
+      stars();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  /* background: linear-gradient(45deg, #2196f3, #ff4685); */
+  /* filter: grayscale(1); */
+
+  /* filter: grayscale(100%); */
+  /* filter: alpha(opacity=70); */
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 180px;
+  height: 140%;
+  background-color: red;
+  box-sizing: 0 0 20px rgb(8, 8, 8);
+  animation: animation 5s linear infinite;
+  /* transform-origin: 50% 50%; */
+}
+.container::after {
+  content: " ";
+  position: absolute;
+  inset: 10px;
+  background-color: aqua;
+  border-radius: 16px;
+}
+
+@keyframes animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
