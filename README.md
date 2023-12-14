@@ -107,6 +107,10 @@ Learn FrontFromYoutube
 
 ![](29/demo.gif)
 
+### [30 边框炫彩动画 按钮悬浮发光效果](29)
+
+![](29/demo.gif)
+
 # TODO
 
 - [ ] [Chart JS Integration | Responsive Admin Dashboard using Html CSS & Javascript | Charts And Graphs](https://www.youtube.com/watch?v=q3zc1ph5fvg&ab_channel=OnlineTutorials)
