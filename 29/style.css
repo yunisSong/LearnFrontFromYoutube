@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  /* background: linear-gradient(45deg, #2196f3, #ff4685); */
+  /* filter: grayscale(1); */
+
+  /* filter: grayscale(100%); */
+  /* filter: alpha(opacity=70); */
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.form-group {
+  --valid: hsl(145 50% 55%);
+  --invalid: hsl(15 80% 55%);
+  --transition: 0.2s;
+  --color: hsl(268 1% 55%);
+  display: grid;
+  gap: 0.5rem;
+}
+
+label {
+  display: flex;
+  color: var(--color);
+  transition: color var(--transition);
+  letter-spacing: 0.1ch;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+label > [aria-hidden] {
+  animation-duration: 0.2s;
+  animation-delay: calc(var(--char-index) * 0.1s);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in;
+}
+
+@keyframes jump {
+  50% {
+    translate: 0 -50%;
+  }
+}
+
+@keyframes shake {
+  25% {
+    translate: 0.25ch 0;
+  }
+  75% {
+    translate: -0.25ch 0;
+  }
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--color);
+  transition: border var(--transition);
+}
+/* 当前聚焦 */
+input:focus-visible {
+  outline-color: var(--color);
+}
+
+/* 校验通过 */
+.form-group:has(:valid) {
+  --color: var(--valid);
+}
+
+/* 失去焦点 检验没通过  not(:placeholder-shown) 且没有显示placeholder */
+.form-group:not(:focus-within):has(:invalid:not(:placeholder-shown)) {
+  --color: var(--invalid);
+}
+
+/* prefers-reduced-motion: no-preference 减弱动画效果，这里 no-preference 表示取默认值，就是不减弱的意思  正常这个可以不使用*/
+@media (prefers-reduced-motion: no-preference) {
+  /* :not(:focus-within) 失去焦点 */
+  /* :has(:valid) 校验通过 */
+  /* [aria-hidden] 拥有aria-hidden这个属性 */
+  .form-group:not(:focus-within):has(:valid) [aria-hidden] {
+    animation-name: jump;
+  }
+
+  /* :not(:focus-within) 失去焦点  */
+  /* :has(:invalid:not(:placeholder-shown)) 检验不通过；不显示 placeholder */
+  .form-group:not(:focus-within):has(:invalid:not(:placeholder-shown)) label {
+    animation: shake 0.075s 8;
+  }
+}
+
+input::placeholder {
+  color: transparent;
+}

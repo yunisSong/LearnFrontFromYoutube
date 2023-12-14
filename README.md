@@ -95,6 +95,18 @@ Learn FrontFromYoutube
 
 ![](25/demo.gif)
 
+### [27 下雪动画](27)
+
+![](27/demo.gif)
+
+### [28 边框炫彩动画 ](28)
+
+![](28/demo.gif)
+
+### [29 输入框校验效果（全 css 实现）](29)
+
+![](29/demo.gif)
+
 # TODO
 
 - [ ] [Chart JS Integration | Responsive Admin Dashboard using Html CSS & Javascript | Charts And Graphs](https://www.youtube.com/watch?v=q3zc1ph5fvg&ab_channel=OnlineTutorials)
