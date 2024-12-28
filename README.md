@@ -109,7 +109,7 @@ Learn FrontFromYoutube
 
 ### [30 边框炫彩动画 按钮悬浮发光效果](29)
 
-![](29/demo.gif)
+![](30/demo.gif)
 
 # TODO
 
